@@ -2,7 +2,7 @@
 #Levantar servicios
 set -euo pipefail
 
-SERVICE="${1:?Uso: ./publish-image.sh <ticket-api|ticket-checkout>}"
+SERVICE="${1:?Uso: ./publish-image.sh <ticket-api|ticket-checkout|ticket-worker>}"
 REGION="us-east-1"
 
 ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
